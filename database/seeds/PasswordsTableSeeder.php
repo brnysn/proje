@@ -2,6 +2,7 @@
 
 use App\Password;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Crypt;
 
 class PasswordsTableSeeder extends Seeder
 {
@@ -12,7 +13,7 @@ class PasswordsTableSeeder extends Seeder
                 'id'             => 1,
                 'title'          => 'demo',
                 'username'       => 'demo',
-                'pass'           => 'demo',
+                'pass'           => Crypt::encrypt('demodemo'),
                 'owner'          => 1,
                 'description'    => 'asdasdasd as das',
                 'created_at'     => '2020-11-27 07:11:07',
@@ -22,7 +23,7 @@ class PasswordsTableSeeder extends Seeder
                 'id'             => 2,
                 'title'          => 'iki',
                 'username'       => 'demo',
-                'pass'           => 'demo',
+                'pass'           => Crypt::encrypt('demodemo2'),
                 'owner'          => 1,
                 'description'    => 'asdasdasd as das',
                 'created_at'     => '2020-11-27 07:11:07',
@@ -32,7 +33,7 @@ class PasswordsTableSeeder extends Seeder
                 'id'             => 3,
                 'title'          => 'üç',
                 'username'       => 'demo',
-                'pass'           => 'demo',
+                'pass'           => Crypt::encrypt('sifreler'),
                 'owner'          => 2,
                 'description'    => 'asdasdasd as das',
                 'created_at'     => '2020-11-27 07:11:07',

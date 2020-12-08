@@ -19,7 +19,7 @@ class UsersTableSeeder extends Seeder
             ],
             [
                 'id'             => 2,
-                'name'           => 'iki Baran',
+                'name'           => 'ikinci Kullanıcı',
                 'email'          => 'yasin@1010.ist',
                 'password'       => '$2y$10$vwkeP9ZNIgpM/kkPkmnFvOnTU9snBXZTVhpFquHGCKuf1dTXSsbDq',
                 'remember_token' => null,
@@ -28,7 +28,7 @@ class UsersTableSeeder extends Seeder
             ],
             [
                 'id'             => 3,
-                'name'           => 'üç Baran',
+                'name'           => 'üçüncü Kullanıcı',
                 'email'          => 'yasin@1010.ist',
                 'password'       => '$2y$10$vwkeP9ZNIgpM/kkPkmnFvOnTU9snBXZTVhpFquHGCKuf1dTXSsbDq',
                 'remember_token' => null,

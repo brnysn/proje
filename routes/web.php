@@ -14,8 +14,8 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
     
     // User
     Route::get('profile', 'UserController@profile')->name('users.profile');
-    Route::get('profile/{user_id}/edit', 'UserController@edit')->name('users.edit');
-    Route::put('profile/update', 'UserController@update')->name('users.update');
+    Route::get('profile/edit', 'UserController@edit')->name('users.edit');
+    Route::patch('profile/{user}', 'UserController@update')->name('users.update');
 
     // Tags
     Route::delete('tags/destroy', 'TagController@massDestroy')->name('tags.massDestroy');

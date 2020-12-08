@@ -26,7 +26,7 @@ class UserController extends Controller
     {
         $user= User::findOrFail(Auth::user()->id);
         $user->update($request->all());
-        return redirect()->route('users.profile');
+        return redirect()->route('admin.users.profile');
     }
 
 }

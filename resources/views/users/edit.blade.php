@@ -9,7 +9,7 @@
     <div class="card-body">
         <form action="{{ route("admin.users.update", [$user->id]) }}" method="POST" enctype="multipart/form-data">
             @csrf
-            @method('PUT')
+            @method('PATCH')
             <div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
                 <label for="name">{{ trans('cruds.user.fields.name') }}*</label>
                 <input type="text" id="name" name="name" class="form-control" value="{{ old('name', isset($user) ? $user->name : '') }}" required autocomplete="off">
@@ -32,18 +32,6 @@
                 @endif
                 <p class="helper-block">
                     {{ trans('cruds.user.fields.email_helper') }}
-                </p>
-            </div>
-            <div class="form-group {{ $errors->has('current_password') ? 'has-error' : '' }}">
-                <label for="password">{{ trans('cruds.user.fields.current_password') }}</label>
-                <input type="password" id="current_password" name="current_password" class="form-control" autocomplete="off">
-                @if($errors->has('current_password'))
-                    <em class="invalid-feedback">
-                        {{ $errors->first('current_password') }}
-                    </em>
-                @endif
-                <p class="helper-block">
-                    {{ trans('cruds.user.fields.current_password_helper') }}
                 </p>
             </div>
             <div class="form-group {{ $errors->has('password') ? 'has-error' : '' }}">

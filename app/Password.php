@@ -9,9 +9,9 @@ class Password extends Model
 {
     use SoftDeletes;
 
-    // use Encryptable;
+    use Encryptable;
 
-    // protected $encryptable = ['pass'];
+    protected $encryptable = ['pass'];
     
     protected $hidden = 'deleted_at';
 
