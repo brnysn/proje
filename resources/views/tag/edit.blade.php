@@ -3,7 +3,7 @@
 
 <div class="card">
     <div class="card-header">
-        {{ trans('cruds.tag.add') }}
+        {{ trans('cruds.tag.edit') }}
     </div>
 
     <div class="card-body">
