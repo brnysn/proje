@@ -102,7 +102,3 @@ table.dataTable thead .sorting_desc {
     cursor: pointer;
     background: #eaeaea;
 }
-.select2-results__option {
-    padding-left: 0px;
-    padding-right: 0px;
-}
