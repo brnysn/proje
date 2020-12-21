@@ -11,7 +11,7 @@ class UsersTableSeeder extends Seeder
             [
                 'id'             => 1,
                 'name'           => 'Yasin Baran',
-                'email'          => 'yasin@1010.ist',
+                'email'          => 'yasin@brnysn.com',
                 'password'       => bcrypt('secret'),
                 'remember_token' => null,
                 'created_at'     => '2020-11-27 07:11:07',
@@ -20,7 +20,7 @@ class UsersTableSeeder extends Seeder
             [
                 'id'             => 2,
                 'name'           => 'ikinci Kullanıcı',
-                'email'          => 'yasin@1010.ist',
+                'email'          => 'yasin@brnysn.com',
                 'password'       => bcrypt('secret'),
                 'remember_token' => null,
                 'created_at'     => '2020-11-27 07:11:07',
@@ -29,7 +29,7 @@ class UsersTableSeeder extends Seeder
             [
                 'id'             => 3,
                 'name'           => 'üçüncü Kullanıcı',
-                'email'          => 'yasin@1010.ist',
+                'email'          => 'yasin@brnysn.com',
                 'password'       => bcrypt('secret'),
                 'remember_token' => null,
                 'created_at'     => '2020-11-27 07:11:07',
