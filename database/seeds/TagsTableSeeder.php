@@ -10,7 +10,7 @@ class TagsTableSeeder extends Seeder
         $users = [
             [
                 'id'             => 1,
-                'name'           => 'demo',
+                'name'           => 'Mail',
                 'owner'          => 1,
                 'description'    => 'asdasdasd as das',
                 'created_at'     => '2020-11-27 07:11:07',
@@ -18,7 +18,7 @@ class TagsTableSeeder extends Seeder
             ],
             [
                 'id'             => 2,
-                'name'           => 'iki',
+                'name'           => 'Banka',
                 'owner'          => 1,
                 'description'    => 'asdasdasd as das',
                 'created_at'     => '2020-11-27 07:11:07',
@@ -26,7 +26,7 @@ class TagsTableSeeder extends Seeder
             ],
             [
                 'id'             => 3,
-                'name'           => 'üç',
+                'name'           => 'Demo',
                 'owner'          => 2,
                 'description'    => 'asdasdasd as das',
                 'created_at'     => '2020-11-27 07:11:07',

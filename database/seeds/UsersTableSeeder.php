@@ -35,6 +35,15 @@ class UsersTableSeeder extends Seeder
                 'created_at'     => '2020-11-27 07:11:07',
                 'updated_at'     => '2020-11-27 07:11:07',
             ],
+            [
+                'id'             => 4,
+                'name'           => '4 Yasin BARAN',
+                'email'          => 'brnysn@gmail.com',
+                'password'       => bcrypt('secret'),
+                'remember_token' => null,
+                'created_at'     => '2020-11-27 07:11:07',
+                'updated_at'     => '2020-11-27 07:11:07',
+            ],
         ];
 
         User::insert($users);
